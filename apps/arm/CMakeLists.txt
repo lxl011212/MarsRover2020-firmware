@@ -12,7 +12,6 @@ target_link_libraries(arm.${TARGET}-board.elf
         LimServo
         Motor
         uwrt-mars-rover-hw-bridge
-	PwmIn
         )
 target_set_firmware_properties(arm.${TARGET}-board.elf)
 
