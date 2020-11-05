@@ -8,15 +8,12 @@ class MoistureSensor : public Sensor {
   MoistureSensor(PinName sda, PinName scl);
   ~MoistureSensor() = default;
 
-  //functions to read sensor data
-  //primary read -> reads moisture data
-  float primaryRead();
-  //alternate read -> reads temperature data
-  float alternateRead();
+  //uint8_t Read_HW_ID();
+  //void Reset_Sensor();
+  //bool Is_Initialized();
 
-  void resetSensor();
-  //reads the HW ID and checks that it is correct
-  bool getSensorStatus();
+  float primaryRead();
+  float alternateRead();
 
  private:
   I2C i2c_;
